@@ -1,5 +1,6 @@
 # uno_project/uno_game/agent.py
 
+from time import sleep
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -126,6 +127,7 @@ class UnoAgent:
         self.hidden_size = params['hidden']
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         print(f"Agent {self.agent_id} (Variant {self.variant}) using device: {self.device}")
+        sleep(2)
 
         # Reward structure
         self.reward_scales = {
