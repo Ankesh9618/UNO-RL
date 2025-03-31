@@ -1,0 +1,22 @@
+# requirements.txt for UNO RL Project
+
+# Core machine learning library for neural networks
+torch 
+torchvision 
+torchaudio --index-url https://download.pytorch.org/whl/cu126
+
+# Numerical computing library (often a dependency for torch and used for array operations)
+numpy
+
+# Plotting library used in train.py for visualizing training progress
+matplotlib
+
+# --- Notes ---
+# - Python's standard libraries (random, collections, os, sys, copy) are not listed here.
+# - It's highly recommended to pin specific versions for reproducibility.
+#   After installing these packages in your virtual environment, run:
+#   pip freeze > requirements.txt
+#   This will update the file with the exact versions you have installed (e.g., torch==2.0.1).
+# - Depending on your system and how you install PyTorch (e.g., with CUDA support),
+#   the installation command might be more specific. Refer to the official PyTorch website:
+#   https://pytorch.org/get-started/locally/
